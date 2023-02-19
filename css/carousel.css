@@ -1,0 +1,150 @@
+/* Main carousel css */
+.carousel-fade .carousel-item { 
+  opacity: 0;
+  transition: opacity 0.75s ease-in-out;
+}
+
+.carousel-fade .carousel-item.active {
+  opacity: 1;
+}
+
+
+/* bootstrap mod: carousel controls */
+.small-controler .carousel-control-prev-icon,
+.small-controler .carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' stroke='%2322313F' stroke-miterlimit='10' stroke-width='4' viewBox='0 0 34.589 66.349'%3E%3Cpath d='M34.168.8 1.7 33.268 34.168 65.735'/%3E%3C/svg%3E");
+  height: 100px;
+}
+
+.small-controler .carousel-control-next-icon {
+  transform: rotate(180deg);
+}
+
+/* medium - display 4  */
+@media (min-width: 768px) {
+    #gallery1 .carousel-inner .carousel-item-right.active,
+    #gallery1 .carousel-inner .carousel-item-next,#gallery2 .carousel-inner .carousel-item-right.active,
+      #gallery2 .carousel-inner .carousel-item-next,#gallery3 .carousel-inner .carousel-item-right.active,
+        #gallery3 .carousel-inner .carousel-item-next {
+      transform: translateX(33.33333%);
+    }
+    
+    #gallery1 .carousel-inner .carousel-item-left.active, 
+    #gallery1 .carousel-inner .carousel-item-prev ,#gallery2 .carousel-inner .carousel-item-left.active,
+    #gallery2 .carousel-inner .carousel-item-prev,#gallery3 .carousel-inner .carousel-item-left.active,
+    #gallery3 .carousel-inner .carousel-item-prev{
+      transform: translateX(-33.33333%);
+    }
+}
+
+/* large - display 5 */
+@media (min-width: 992px) {
+    #gallery1 .carousel-inner .carousel-item-right.active,
+    #gallery1 .carousel-inner .carousel-item-next,
+    #gallery2 .carousel-inner .carousel-item-right.active,
+      #gallery2 .carousel-inner .carousel-item-next,
+      #gallery3 .carousel-inner .carousel-item-right.active,
+        #gallery3 .carousel-inner .carousel-item-next {
+      transform: translateX(20%);
+    }
+    
+    #gallery1 .carousel-inner .carousel-item-left.active, 
+    #gallery1 .carousel-inner .carousel-item-prev,
+        #gallery2 .carousel-inner .carousel-item-left.active,
+        #gallery2 .carousel-inner .carousel-item-prev,
+                #gallery3 .carousel-inner .carousel-item-left.active,
+                #gallery3 .carousel-inner .carousel-item-prev {
+      transform: translateX(-20%);
+    }
+}
+
+#gallery1 .carousel-inner .carousel-item-right,
+#gallery1 .carousel-inner .carousel-item-left,
+#gallery2 .carousel-inner .carousel-item-right,
+#gallery2 .carousel-inner .carousel-item-left,
+#gallery3 .carousel-inner .carousel-item-right,
+#gallery3 .carousel-inner .carousel-item-left{ 
+  transform: translateX(0);
+}
+
+
+/* gallery slider */
+#gallery1 .carousel-inner .carousel-item.active,
+#gallery1 .carousel-inner .carousel-item-next,
+#gallery1 .carousel-inner .carousel-item-prev,
+#gallery2 .carousel-inner .carousel-item.active,
+#gallery2 .carousel-inner .carousel-item-next,
+#gallery2 .carousel-inner .carousel-item-prev,
+#gallery3 .carousel-inner .carousel-item.active,
+#gallery3 .carousel-inner .carousel-item-next,
+#gallery3 .carousel-inner .carousel-item-prev{
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  #gallery1 .carousel-inner .carousel-item > div,
+  #gallery2 .carousel-inner .carousel-item>div,
+  #gallery3 .carousel-inner .carousel-item>div {
+    display: none;
+  }
+  #gallery1 .carousel-inner .carousel-item > div:first-child,
+    #gallery2 .carousel-inner .carousel-item>div:first-child,
+        #gallery3 .carousel-inner .carousel-item>div:first-child {
+    display: block;
+    text-align: center;
+  }
+}
+.carousel-control-next,
+.carousel-control-prev{
+  width: 5%;
+}
+/* bootstrap mod addons */
+.w-90 {
+  width: 90%;
+}
+
+.col-5,
+.col-sm-5,
+.col-md-5,
+.col-lg-5,
+.col-xl-5 {
+  position: relative;
+  width: 100%;
+  padding-right: 2px;
+  padding-left: 2px;
+}
+
+.col-5 {
+  flex: 0 0 20%;
+  max-width: 20%;
+}
+
+@media (min-width: 576px){
+  .col-sm-5 {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+@media (min-width: 768px){
+  .col-md-5 {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+@media (min-width: 992px){
+  .col-lg-5 {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+@media (min-width: 1200px){
+  .col-xl-5 {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+
+
+
+
+
